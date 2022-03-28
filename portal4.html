@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESTSALE</title>
+    <link rel="stylesheet" href="CSS/portal4.css">
+</head>
+<script>
+  var images = [
+    'IMG/s2.png', 
+    'IMG/s3.jpg', 
+    'IMG/s4.jpg'
+];
+var num = 0;
+function next(){
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+    setTimeout(next, 3000);
+  }
+  window.onload = next;
+
+
+</script>
+<script>
+  function mess()
+  {
+    alert("This is only a Prototype. Full Version is Not Available")
+  }
+</script>
+<body>
+    <div class="containers">
+        <div class="navbar">
+            <li><img src="IMG/logo.png" alt="IMG" id="logo"></li>
+            <li onclick="mess();" class="text"><a href="#">Offers</a></li>
+            <li onclick="mess();" class="text"><a href="#">New Product</a></li>
+            <li onclick="mess();" class="text"><a href="#">Best Deals</a></li>
+            <li onclick="mess();" class="text"><a href="#">About</a></li>
+            <div class="search" >
+                <form action="#" align="right">
+                    <input type="search" name="search" placeholder="Search Product" id="searchbox" required>
+                    <input onclick="mess();" type="submit" value="Search" name="submit" id="searchbtn">
+                </form>
+            </div>
+            <img id="cart" src="IMG/cart.png" alt="IMG">
+            <button id="login"><a href="login.html">Login</a> </button>
+        </div>
+        <div class="nav">
+            <a href="#">
+            <a href="#"><li onclick="mess();" class="navtext">Cloths</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Beuty</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Furniture</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Jewellery</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Handbags</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Home Improvement</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Shoes</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Electronics</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Food</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Toys</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Sweets</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Tools</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Books</li></a>
+            <a href="#"><li onclick="mess();" class="navtext">Musical Instruments</li></a>
+        </div>
+
+        <div class="slider">
+            <img id="slider" src="IMG/s2.png"/> 
+        </div>
+
+        <div class="boxconatiner">
+          <div class="allboxes">
+              <div class="links" >
+                <a href="#"><img onclick="mess();" src="IMG/about.png" alt="IMG" id="firstimg"></a>
+                <a href="#"><img onclick="mess();" src="IMG/review.png" alt="IMG" id="secoundimg"></a>
+                <a href="#"><img onclick="mess();" src="IMG/material.png" alt="IMG" id="thirdimg"></a>
+                <a href="#"><img onclick="mess();" src="IMG/customer.png" alt="IMG" id="forthimg"></a>
+              </div>
+    
+                <div onmouseenter="moveup();" onmouseleave="movere();" class="box">
+                  <img src="IMG/product1.jpg" alt="IMG" class="products">
+                  <h3 align="center">Leather Products</h3>
+                </div>
+              <script>
+                
+                var f1=document.getElementById("firstimg");
+                var s1=document.getElementById("secoundimg");
+                var t1=document.getElementById("thirdimg");
+                var fo1=document.getElementById("forthimg");
+                function moveup(){
+                    marl=0;
+                    mart=90;
+                    f1.style.left=marl+"px";
+                    s1.style.left=mart+"px";
+                    t1.style.left=marl+"px";
+                    fo1.style.left=mart+"px";
+                }
+                function movere(){
+                  var t=setInterval(re,3000);
+                  function re()
+                  {
+                      f1.style.left=40+"px";
+                      s1.style.left=50+"px";
+                      t1.style.left=40+"px";
+                      fo1.style.left=50+"px";
+                      clearInterval(t);
+                  }
+                }
+                
+      
+              </script>
+          </div>
+
+          <div class="allboxes">
+            <div class="links">
+              <a href="#"><img onclick="mess();" src="IMG/about.png" alt="IMG" id="sfirstimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/review.png" alt="IMG" id="ssecoundimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/material.png" alt="IMG" id="sthirdimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/customer.png" alt="IMG" id="sforthimg"></a>
+            </div>
+  
+              <div onmouseenter="moveups();" onmouseleave="moveres();" class="box">
+                <img src="IMG/product2.jpg" alt="IMG" class="products">
+                <h3 align="center">Musical Instruments</h3>
+              </div>
+            <script>
+              
+              var sf1=document.getElementById("sfirstimg");
+              var ss1=document.getElementById("ssecoundimg");
+              var st1=document.getElementById("sthirdimg");
+              var sfo1=document.getElementById("sforthimg");
+              function moveups(){
+                  
+                  sf1.style.left=365+"px";
+                  ss1.style.left=455+"px";
+                  st1.style.left=365+"px";
+                  sfo1.style.left=455+"px";
+              }
+              function moveres(){
+                 var t=setInterval(res,3000);
+                 function res()
+                {
+                    sf1.style.left=405+"px";
+                    ss1.style.left=405+"px";
+                    st1.style.left=405+"px";
+                    sfo1.style.left=405+"px";
+                    clearInterval(t);
+                }
+              }
+              
+    
+            </script>
+          </div>
+
+          <div class="allboxes">
+            <div class="links">
+              <a href="#"><img onclick="mess();" src="IMG/about.png" alt="IMG" id="tfirstimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/review.png" alt="IMG" id="tsecoundimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/material.png" alt="IMG" id="tthirdimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/customer.png" alt="IMG" id="tforthimg"></a>
+            </div>
+  
+              <div onmouseenter="moveupt();" onmouseleave="moveret();" class="box">
+                <img src="IMG/product3.jpg" alt="IMG" class="products">
+                <h3 align="center">Wood Crafts</h3>
+              </div>
+            <script>
+              
+              var tf1=document.getElementById("tfirstimg");
+              var ts1=document.getElementById("tsecoundimg");
+              var tt1=document.getElementById("tthirdimg");
+              var tfo1=document.getElementById("tforthimg");
+             
+              function moveupt(){
+                  
+                  tf1.style.left=715+"px";
+                  ts1.style.left=800+"px";
+                  tt1.style.left=715+"px";
+                  tfo1.style.left=800+"px";
+              }
+              function moveret(){
+                 var t=setInterval(ret,3000);
+                 function ret()
+                {
+                    tf1.style.left=760+"px";
+                    ts1.style.left=755+"px";
+                    tt1.style.left=760+"px";
+                    tfo1.style.left=755+"px";
+                    clearInterval(t);
+                }
+              }
+              
+    
+            </script>
+          </div>
+
+
+          <div class="allboxes">
+            <div class="links">
+              <a href="#"><img onclick="mess();" src="IMG/about.png" alt="IMG" id="ffirstimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/review.png" alt="IMG" id="fsecoundimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/material.png" alt="IMG" id="fthirdimg"></a>
+              <a href="#"><img onclick="mess();" src="IMG/customer.png" alt="IMG" id="fforthimg"></a>
+            </div>
+  
+              <div onmouseenter="moveupf();" onmouseleave="moveref();" class="box">
+                <img src="IMG/product4.jpg" alt="IMG" class="products">
+                <h3 align="center">Cramic Products</h3>
+              </div>
+            <script>
+              
+              var ff1=document.getElementById("ffirstimg");
+              var fs1=document.getElementById("fsecoundimg");
+              var ft1=document.getElementById("fthirdimg");
+              var ffo1=document.getElementById("fforthimg");
+             
+              function moveupf(){
+                  
+                  ff1.style.left=1070+"px";
+                  fs1.style.left=1150+"px";
+                  ft1.style.left=1070+"px";
+                  ffo1.style.left=1150+"px";
+              }
+              function moveref(){
+                 var t=setInterval(ref,3000);
+                 function ref()
+                {
+                    ff1.style.left=1110+"px";
+                    fs1.style.left=1100+"px";
+                    ft1.style.left=1110+"px";
+                    ffo1.style.left=1100+"px";
+                    clearInterval(t);
+                }
+              }
+              
+    
+            </script>
+          </div>
+
+        </div>
+
+        <div class="breaks">
+          <li>
+            <img src="IMG/about.png" alt="IMG" class="breakimg">
+            <h3>  About Produts</h3>
+          </li>
+          <li>
+            <img src="IMG/review.png" alt="IMG" class="breakimg">
+            <h3>  Reviews</h3>
+          </li>
+          <li>
+            <img src="IMG/material.png" alt="IMG" class="breakimg">
+            <h3>  Material use</h3>
+          </li>
+          <li>
+            <img src="IMG/customer.png" alt="IMG" class="breakimg">
+            <h3>Customer Support</h3>
+          </li>
+        </div>
+
+
+
+        <h2 style="text-align: center;background-color: rgb(119, 0, 0);color: white;margin-top: 20px; padding: 2px;border-radius: 5px; padding: 5px;">All Indian Products</h2>
+      <div class="product_box">
+
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allpro1.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Keys and Locks</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $2 each</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;" onclick="mess();">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="https://cdn.pixabay.com/photo/2014/12/31/11/41/shoes-584850__340.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong> Running Shoe</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $4</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;" onclick="mess();">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allpro2.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Bedsheets</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $10</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;" onclick="mess();">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allpro4.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Zari-Zardori</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $5</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;" onclick="mess();">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allpro3.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Gaura Stone Crafts</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $21</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+     
+        
+      </div>
+
+      <div class="product_box">
+
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allprod6.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Food Processing (Desi Ghee)</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $2 each</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allprod7.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Textile Products</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $5</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allprod8.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Moonj Products</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $1-$12</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allprod9.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Ceramic Products</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $4</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+
+        <ul class="items">
+          <div class="contain">
+            <div class="card">
+            <div class="face face1">
+                <div class="content">
+                               
+                <h3><img src="IMG/allprod10.jpg" alt="img" width="240px"></h3>
+                </div>
+            </div>
+            <div class="face face2">  
+                  <li class="price"><h5><strong>Wodden Toys and Wooden Crafts</strong><br></h5>
+                    <h5 style="color: brown;"><strong>M.R.P = $5-$10</strong></h5>
+                    All colour & size Available <br>diliver in 5 days <br>
+                  <span style="background-color: rgb(255, 166, 0);" class="dot"></span>
+                  <span style="background-color: red;" class="dot"></span>
+                  <span style="background-color: rgb(102, 255, 0);" class="dot"></span>
+                  <span style="background-color: rgb(68, 0, 255);" class="dot"></span>
+                  <span style="background-color: rgb(212, 0, 255);" class="dot"></span><br>
+                  <a onclick="mess();" style="text-align: center;" href="#"><h5 style="background-color: rgb(255, 0, 0);color: white;">BUY NOW</h5></a>
+                </li>  
+            </div>
+            </div>
+        </div>
+        </ul>
+     
+        
+      </div>
+        
+        <div class="footer">
+          <h3 align="center">@Copyright : All Right Reserve</h3>
+        </div>
+    </div>
+</body>
+</html>

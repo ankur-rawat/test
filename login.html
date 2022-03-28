@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script>
+        function mes()
+        {
+            alert("This is Only Prototype. This feature is not available.")
+        }
+    </script>
+</head>
+<body align="center">
+
+    <div class="navbar">
+        
+            <li><img src="IMG/logo.png" alt="logo" width="60px" height="60px" id="logo"></li>
+            <div class="navcontent">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">HELP</a></li>
+                <li>
+                    <input type="search" id="search" placeholder="Search">
+                </li>
+                <li>
+                    <img onclick="mes();" src="IMG/search.png" id="searchimg" alt="IMG" width="40px">
+                </li>
+            </div>
+       
+    </div>
+    
+    <div class="form">
+        <form action="#" id="loginform" align="center">
+            <h2>LOGIN HERE</h2>
+            <input type="text" name="userid" placeholder="Enter your User ID" class="inputbox"><br>
+            <input type="password" name="password" placeholder="Enter Password"  class="inputbox"><br>
+            <input type="submit" name="login" id="loginbtn" onclick="mes();">
+            <a  href="#"><p style="color: white; margin:20px;">Forgot Password</p></a>
+        </form>
+    </div>
+
+</body>
+</html>

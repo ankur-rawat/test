@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+    background-color: black;
+  }
+  .allboxes{
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .oddbox{
+    width:250px;
+    height :350px;
+    background-color: rgb(252, 249, 72);
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .oddbox:hover{
+    width:250px;
+    height :350px;
+    background-color: rgb(252, 249, 72);
+    border: solid rgba(255, 187, 0, 0.486) 2px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px #888888;
+    margin-left: 80px;
+  }
+  .evenbox{
+    width:250px;
+    height :350px;
+    background-color: rgb(168, 252, 72);
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .evenbox:hover{
+    width:250px;
+    height :350px;
+    background-color: rgb(168, 252, 72);
+    border: solid rgb(98, 255, 93) 2px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px #888888;
+    margin-left: 80px;
+  }
+  .boximage{
+    border-radius: 100px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    border: solid rgb(255, 255, 255) 2px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #888888;
+  }
+  .secoundpart{
+    justify-content: center;
+    margin: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #888888;
+  }
+  .heading{
+    color : white; 
+    margin: 5px; 
+    box-shadow: 5px 0px 10px  #999999; 
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #welcome{
+    justify-content: center;
+    margin-left: 43%;
+  }
+  .content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+  }

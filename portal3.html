@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL 3</title>
+    <link rel="stylesheet" href="CSS/portal3.css">
+    <script>
+        function mess()
+        {
+          alert("This is only a Prototype. Full Version is Not Available")
+        }
+      </script>
+</head>
+<body>
+    <div class="containers">
+        <div class="navbar">
+            <li><img src="IMG/logo.png" alt="IMG" id="logo"></li>
+            <li onclick="mess();" class="text"><a href="#">Offers</a></li>
+            <li onclick="mess();" class="text"><a href="#">New Product</a></li>
+            <li onclick="mess();" class="text"><a href="#">Best Deals</a></li>
+            <li onclick="mess();" class="text"><a href="#">About</a></li>
+            <div class="search" >
+                <form action="#" align="right">
+                    <input type="search" name="search" placeholder="Search Product" id="searchbox" required>
+                    <input onclick="mess();" type="submit" value="Search" name="submit" id="searchbtn">
+                </form>
+            </div>
+            <img id="cart" src="IMG/cart.png" alt="IMG">
+            <button id="login"><a href="login.html">Login</a> </button>
+        </div>
+
+        <div id="slider">
+            <img src="IMG/s1.png" alt="IMG" width="100%" height="400px">
+        </div>
+
+        <div class="boxcontainer">
+            <div onclick="mess();" class="box">
+                <img src="IMG/registration.jpg" alt="IMG" class="boximg">
+                <h3 align="center">Registration <br> पंजीकरण</h3>
+            </div>
+
+            <div onclick="mess();" class="box">
+                <img src="IMG/product.png" alt="IMG" class="boximg">
+                <h3 align="center">Product Registration <br>उत्पाद पंजीकरण</h3>
+            </div>
+
+            <div onclick="mess();" class="box">
+                <img src="IMG/technology.png" alt="IMG" class="boximg">
+                <h3 align="center">Technology <br>प्रौद्योगिकी</h3>
+            </div>
+            
+            <div onclick="mess();" class="box">
+                <img src="IMG/raw.png" alt="IMG" class="boximg">
+                <h3 align="center">Raw Material <br>कच्चा माल</h3>
+            </div>
+
+            <div onclick="mess();" class="box">
+                <img src="IMG/help.png" alt="IMG" class="boximg">
+                <h3 align="center">Complain <br>शिकायत</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

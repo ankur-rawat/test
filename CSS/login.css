@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    
+}
+a{
+    text-decoration: none;
+    color: wheat;
+    
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    background-color: rgb(39, 39, 39);
+    list-style: none;
+    font-size: 25px;
+    
+}
+.navcontent{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.navcontent li{
+    margin-left: 20px;
+    
+}
+
+#logo{
+    border-radius: 50px;
+    border: solid rgb(255, 255, 255) 2px;
+    background-color: white;
+    margin: 8px;
+}
+#search{
+    margin-left: 900px;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#searchimg{
+    border: solid white 2px;
+    border-radius: 150px;
+   
+}
+#searchimg:hover{
+    border: solid white 2px;
+    border-radius: 150px;
+    width: 45px;
+   
+}
+#loginform{
+    padding: 10px;
+    margin-top: 50px;
+    border: solid rgb(255, 255, 255) 2px;
+    width:400px;
+    border-radius: 10px;
+    color : white;
+    margin-left: 35%;
+    
+}
+#loginform:hover{
+    padding: 10px;
+    margin-top: 50px;
+    border: solid rgb(255, 255, 255) 2px;
+    width:400px;
+    border-radius: 10px;
+    color : white;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.555), 0 6px 20px 0 rgba(255, 255, 255, 0.555);
+}
+.inputbox{
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.inputbox:hover{
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.555), 0 6px 20px 0 rgba(255, 255, 255, 0.555);
+}
+#loginbtn{
+    background-color: #00ff6a00;
+    
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 25px;
+    margin: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+    color : white;
+}
+#loginbtn:hover{
+    background-color: #96969675;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.555), 0 6px 20px 0 rgba(255, 255, 255, 0.555);
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 25px;
+    margin: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+    color : white;
+}
